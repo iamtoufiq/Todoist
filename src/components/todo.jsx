@@ -46,17 +46,15 @@ const Todo = () => {
         <ol>
           {items.map((elem, ind) => {
             return (
-              <>
-                <div key={elem} className="todo_style">
-                  <i
-                    className="fa-sharp fa-solid fa-circle-xmark"
-                    onClick={() => {
-                      deleteItems(ind);
-                    }}
-                  ></i>
-                  <li>{elem}</li>
-                </div>
-              </>
+              <div key={elem} className="todo_style">
+                <i
+                  className="fa-sharp fa-solid fa-circle-xmark"
+                  onClick={() => {
+                    deleteItems(ind);
+                  }}
+                ></i>
+                <li>{elem}</li>
+              </div>
             );
           })}
         </ol>
